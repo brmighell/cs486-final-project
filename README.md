@@ -1,4 +1,5 @@
-# Recidivism Risk Predictor *(CS 486 Final Project)*
+# Recidivism Risk Predictor 
+*(CS 486 Final Project)*
 
 ## Repo Structure
 ```
