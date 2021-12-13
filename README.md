@@ -32,7 +32,14 @@
 - `Iowa_no_race.ipynb` - Same as above just with all ethnic features removed.
 
 ## Process Overview:
-We analyzed and trained models (using a variety of algorithms) on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others; each different type of model consistently had accuracy scores between `0.66` and `0.68`.
+We analyzed and trained models (using a variety of algorithms) on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others.
+
+|  | `best_model` Accuracy Score |
+|--|--|
+| COMPAS | 0.717 |
+| COMPAS_no_race | 0.716 |
+| Iowa | 0.680 |
+| Iowa_no_race | 0.672 |
 
 Each folder is fully self-contained and can be run independently of the other.
 
@@ -51,7 +58,11 @@ ___
 
 Interestingly, when fitting for COMPAS, DNN models' racism seemed to be proportional to the number of epochs. That is, the higher the number of epochs the more racist the model.
 
-Also worth noting is that, when race was removed as a feature, both models' racism dropped although the model trained on the COMPAS dataset didn't drop nearly as sharply as the Iowa model.
+Also worth noting is that, when race was removed as a feature, both models' racism dropped although the model trained on the COMPAS dataset didn't drop nearly as sharply as the Iowa model. Accuracy dropped as well though, on the plus side, not by a whole lot.
+
+## Closing Thoughts
+- Could possibly include racism as a filtering factor for `best_model` instead of only going by accuracy.
+- 
 
 ## Notes:
 - As-is the DNN models include functionality to write run logs to whatever machine they're running on.
