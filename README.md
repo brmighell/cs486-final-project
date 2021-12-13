@@ -65,8 +65,9 @@ Interestingly, when fitting for COMPAS, DNN models' racism seemed to be proporti
 Also worth noting is that, when race was removed as a feature, both models' racism dropped although the model trained on the COMPAS dataset didn't drop nearly as sharply as the Iowa model. Accuracy dropped as well though, on the plus side, not by a whole lot.
 
 ## What's Next?
-- Could possibly include racism as a filtering factor for `best_model` instead of only going by accuracy.
-- Could definitely use a deeper look at the COMPAS data - the fact that models still become racist despite ethnic features being removed suggests that there's some non-obvious combination of features that correlates to ethnicity.
+- Possibly include racism as a filtering factor for `best_model` instead of only going by accuracy.
+- Take a deeper look at the COMPAS data - the fact that models still become racist despite ethnic features being removed suggests that there's some non-obvious combination of features that correlates to ethnicity.
+- Find datasets that have more personal data for each individual, including health and drug use.
 
 ## Notes
 - As-is the DNN models include functionality to write run logs to whatever machine they're running on.
