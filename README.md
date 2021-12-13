@@ -39,20 +39,13 @@ Each folder is fully self-contained and can be run independently of the other.
 ## Brief Thoughts:
 Both of the models for the Iowa and COMPAS datasets wound up slightly racist, though in opposite directions. Here's a table showing how the COMPAS model was more likely to assign false positives to African-Americans while the Iowa model was more likely to incorrectly flag Caucasians.
 ___
-False positive rate with race data included:
 
 |  | Caucasian | African-American |
 |--|--|--|
 | COMPAS | -12.25% | +18.38% |
+| COMPAS_no_race | -8.67% | +9.94% |
 | Iowa | +12.29% | -7.18% |
-
-___
-False positive rate without race data:
-
-|  | Caucasian | African-American |
-|--|--|--|
-| COMPAS | -8.67% | +9.94% |
-| Iowa | +1.18% | -1.13% |
+| Iowa_no_race | +1.18% | -1.13% |
 
 ___
 
