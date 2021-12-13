@@ -31,7 +31,7 @@
 - `Iowa_model.ipynb` - This Jupyter Notebook file contains all modelling done on `3_year_recidivism_elaborated_2.csv` as well as a brief analysis of results at the bottom.
 - `Iowa_no_race.ipynb` - Same as above just with all ethnic features removed.
 
-## Process Overview:
+## Overview:
 We analyzed and trained models (using a variety of algorithms) on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others.
 
 |  | `best_model` Accuracy Score |
@@ -60,9 +60,9 @@ Interestingly, when fitting for COMPAS, DNN models' racism seemed to be proporti
 
 Also worth noting is that, when race was removed as a feature, both models' racism dropped although the model trained on the COMPAS dataset didn't drop nearly as sharply as the Iowa model. Accuracy dropped as well though, on the plus side, not by a whole lot.
 
-## Closing Thoughts
+## What's Next?
 - Could possibly include racism as a filtering factor for `best_model` instead of only going by accuracy.
-- 
+- Could definitely use a deeper look at the COMPAS data - the fact that models still become racist despite ethnic features being removed suggests that there's some non-obvious combination of features that correlates to ethnicity.
 
 ## Notes:
 - As-is the DNN models include functionality to write run logs to whatever machine they're running on.
