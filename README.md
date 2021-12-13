@@ -1,5 +1,4 @@
 # Recidivism Risk Predictor 
-*CS 486 Final Project*
 
 ## Repo Structure
 ```
@@ -27,13 +26,27 @@ Each folder is fully self-contained and can be run independently of the other.
 
 ## Brief Thoughts:
 Both of the models for the Iowa and COMPAS datasets wound up slightly racist, though in opposite directions. Here's a table showing how the COMPAS model was more likely to assign false positives to African-Americans while the Iowa model was more likely to incorrectly flag Caucasians.
+___
+False positive rate with race data included:
 
 |  | Caucasian | African-American |
 |--|--|--|
 | COMPAS | -12.25% | +18.38% |
 | Iowa | +12.29% | -7.18% |
 
+___
+False positive rate without race data:
+
+|  | Caucasian | African-American |
+|--|--|--|
+| COMPAS | -8.67% | +9.94% |
+| Iowa | +1.18% | -1.13% |
+
+__
+
 Interestingly, when fitting for COMPAS, DNN models' racism seemed to be proportional to the number of epochs. That is, the higher the number of epochs the more racist the model.
+
+Also worth noting is that, when race was removed as a feature, both models' racism dropped although the model trained on the COMPAS dataset didn't drop nearly as sharply as the Iowa model.
 
 ## Notes:
 - As-is the DNN models include functionality to write run logs to whatever machine they're running on.
