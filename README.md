@@ -21,7 +21,7 @@
 - `Iowa_model.ipynb` - This Jupyter Notebook file contains all modelling done on `3_year_recidivism_elaborated_2.csv` as well as a brief analysis of results at the bottom.
 
 ## Process Overview:
-We analyzed and trained models on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others; each different type of model consistently had accuracy scores between `0.66` and `0.68`.
+We analyzed and trained models (using a variety of algorithms) on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others; each different type of model consistently had accuracy scores between `0.66` and `0.68`.
 
 Each folder is fully self-contained and can be run independently of the other.
 
