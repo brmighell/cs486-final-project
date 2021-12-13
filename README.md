@@ -42,7 +42,7 @@ False positive rate without race data:
 | COMPAS | -8.67% | +9.94% |
 | Iowa | +1.18% | -1.13% |
 
-__
+___
 
 Interestingly, when fitting for COMPAS, DNN models' racism seemed to be proportional to the number of epochs. That is, the higher the number of epochs the more racist the model.
 
