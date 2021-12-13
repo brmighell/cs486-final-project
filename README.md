@@ -7,10 +7,20 @@
 |  |COMPAS_model.ipynb
 |  |compas_people.csv
 |
+|COMPAS_no_race
+|  |logs/hparam_tuning
+|  |COMPAS_no_race.ipynb
+|  |compas_people.csv
+|
 |Iowa
 |  |logs/hparam_tuning
 |  |3_year_recidivism_elaborated_2.csv
 |  |Iowa_model.ipynb
+|
+|Iowa_no_race
+|  |logs/hparam_tuning
+|  |3_year_recidivism_elaborated_2.csv
+|  |Iowa_no_race.ipynb
 ```
 
 ## Notable Files:
