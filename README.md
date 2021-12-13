@@ -24,12 +24,16 @@
 ```
 
 ## Notable Files:
+
+### Notebooks:
 - `COMPAS_model.ipynb` - This Jupyter Notebook file contains all modelling done on `compas_people.csv` as well as a brief analysis of results at the bottom.
 - `COMPAS_no_race.ipynb` - Same as above just with all ethnic features removed.
-- `compas_people.csv` - This dataset is taken from a repo created by the authors of a ProPublica study of racism in recidivist algorithms. Source: https://github.com/propublica/compas-analysis/blob/master/compas.db
-- `3_year_recidivism_elaborated_2.csv` - A Kaggle dataset referencing a 3-year period of recidivism in Iowa. Source: https://www.kaggle.com/kerneler/starter-3-year-recidivism-2747e192-0/data
 - `Iowa_model.ipynb` - This Jupyter Notebook file contains all modelling done on `3_year_recidivism_elaborated_2.csv` as well as a brief analysis of results at the bottom.
 - `Iowa_no_race.ipynb` - Same as above just with all ethnic features removed.
+
+### Datasets:
+- `compas_people.csv` - This dataset is taken from a repo created by the authors of a ProPublica study of racism in recidivist algorithms. Source: https://github.com/propublica/compas-analysis/blob/master/compas.db
+- `3_year_recidivism_elaborated_2.csv` - A Kaggle dataset referencing a 3-year period of recidivism in Iowa. Source: https://www.kaggle.com/kerneler/starter-3-year-recidivism-2747e192-0/data
 
 ## Overview:
 We analyzed and trained models (using a variety of algorithms) on both datasets, selecting the model with the best performance to finally validate. Interestingly, no one model is far and away better than the others.
